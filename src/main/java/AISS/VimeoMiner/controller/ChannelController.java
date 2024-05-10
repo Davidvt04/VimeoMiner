@@ -91,7 +91,7 @@ public class ChannelController {
         Channel channel= findChannel(id,maxVideos,maxComments);
 
         //String uri= "http://localhost:8080/videominer/channels";
-        String uri= "http://videominer.azurewebsites.net/videominer/channels";
+        String uri= "https://videominer.azurewebsites.net/videominer/channels";
         HttpHeaders httpHeaders= new HttpHeaders();
         HttpEntity<Channel> request= new HttpEntity<>(channel,httpHeaders);
         ResponseEntity<Channel> response= restTemplate.exchange(uri, HttpMethod.POST,request, Channel.class);
