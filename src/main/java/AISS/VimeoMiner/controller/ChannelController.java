@@ -52,7 +52,7 @@ public class ChannelController {
             description= "Get a Vimeo channel by specifying its Id",
             tags = {"channel", "get"})
     @ApiResponses({
-            @ApiResponse(responseCode = "200", description = "Vimeo channel", content = {@Content(schema = @Schema(implementation = Channel.class), mediaType = "application/json")}),
+            @ApiResponse(responseCode = "200", description = "Vimeo channel.", content = {@Content(schema = @Schema(implementation = Channel.class), mediaType = "application/json")}),
             @ApiResponse(responseCode = "404", content = {@Content(schema = @Schema())})
             })
 
