@@ -31,9 +31,9 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.util.LinkedList;
 import java.util.List;
-@Tag(name= "Youtube", description =  "Yputube management API")
+@Tag(name= "Vimeo", description =  "Vimeo management API")
 @RestController
-@RequestMapping("/api/channel") //Cual es la uri que hay que usar?????
+@RequestMapping("/api/channel")
 public class ChannelController {
     @Autowired
     ChannelService channelService;
