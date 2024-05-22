@@ -18,7 +18,7 @@ class CommentServiceTest {
     @Test
     @DisplayName("Get an specific comment")
     void getComment(){
-        Comment comment= commentService.getComment("","");
+        Comment comment= commentService.getComment("715547149","19905839");
         System.out.println(comment);
     }
 
